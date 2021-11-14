@@ -1,0 +1,40 @@
+.icon-style {
+  font-size: 10em;
+  color: #6544dd;
+}
+
+.btn {
+  background-color: #6544dd;
+  min-width: 80%;
+}
+
+.card {
+  width: 25rem;
+  height: 20rem;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #e0dbf1;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.65rem;
+  color: #362942;
+}
+.display{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h1{
+  text-align: center;
+}
+h5{
+  text-align: center;
+}

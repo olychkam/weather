@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.app {
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #373056;
+    color: white;
+    font-size: 16px;
+    transition: background-color 2s ease 1s, color 2s ease 1s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-details {
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather-details .city {
+    font-size: 24px;
+    margin: 20px 0;
+    padding-top: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-details .temperature {
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-details .humidity {
+    font-size: 16px;
+    text-transform: none;
+    padding-bottom: 5px;
+}
+
+.weather-details .descript {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.weather-details .windSpeed {
+    text-transform: none;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.time {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    width: 70%;
+    overflow: scroll;
+}
+
+.app-header {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.app-container {
+    left: 50%;
+    margin-left: -500px;
+    position: absolute;
+    width: 1000px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
 }
